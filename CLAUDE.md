@@ -1,9 +1,10 @@
-# Working in this repo
+# Working in this repo — Convert (unit-converter)
 
-This is an **immediately.run app**: React + TypeScript that loads from GitHub and
-transpiles in the browser (no server, no build step at runtime). Keep the rules
-below or the app breaks *only* on immediately.run while still looking fine in
-local `vite dev` — the most common silent failure.
+This app is a unit converter, world clock / meeting planner and quick-reference
+tables for immediately.run. Entry: `src/App.tsx`; conversion, parsing and
+time-zone logic under `src/lib/`; unit and reference tables under `src/data/`;
+preferences persist through `src/lib/store.ts` (private settings mount only,
+in-memory fallback). No external network calls; `Intl` only for dates.
 
 ## Hard rules (these break immediately.run if violated)
 
