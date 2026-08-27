@@ -38,6 +38,7 @@ function ZoneSearch({ pinned, now, onAdd }: Props) {
           if (e.key === 'Enter' && results[0]) {
             onAdd(results[0]);
             setQ('');
+            setOpen(false);
           }
         }}
       />
